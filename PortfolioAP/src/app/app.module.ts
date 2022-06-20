@@ -10,6 +10,8 @@ import { EducacionComponent } from './educacion/educacion.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { LogoargprogComponent } from './logos/logoargprog/logoargprog.component';
+import { RedessocialesComponent } from './redessociales/redessociales.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LogoargprogComponent } from './logos/logoargprog/logoargprog.component'
     EducacionComponent,
     HabilidadesComponent,
     ProyectosComponent,
-    LogoargprogComponent
+    LogoargprogComponent,
+    RedessocialesComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

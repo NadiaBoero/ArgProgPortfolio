@@ -1,4 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .logoargprog{
-    width: 9rem;
-    height: 5rem;
+
+    width: 16rem;
+    height:auto;
 }
