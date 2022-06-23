@@ -2,18 +2,21 @@
 
 
 .header{
-
+    margin-bottom: 0%;
     background-color:skyblue;
     width: 100%;
-    height: 110px;
+    height: 100%;
+    
     
     
 }
 
 app-redessociales{
     float: right;
-    padding-top: 1.7rem;
+    padding-top: 0.5rem;
     
     
 }
+
+
 

@@ -1,0 +1,16 @@
+img{
+    position: relative;
+    margin:-200px;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    float: left;
+    left:200px;
+    box-shadow: 5px 5px 5px grey;
+    
+    
+}
+div{
+    background-color: skyblue;
+    text-align: center;
+}
