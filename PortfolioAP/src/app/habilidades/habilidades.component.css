@@ -5,4 +5,148 @@ div{
     color: white;
     font-family: 'Fredoka One', cursive;
     text-align: center;
+    list-style: none;
 }
+.habilidades{
+    width: 500px;
+    margin:60px auto;
+    background-color: orange;
+    padding:20px;
+    box-shadow: 0 14px 28px, 0 10px 10px;
+}
+
+.habilidades li{
+    margin:20px, 0;
+    padding: 10px;
+
+}
+
+.barra{
+    background-color: white;
+    display: block;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px, 0 1px 2px;
+    transition: all 0.3s cubic-bezier(.25, .8,.25,1);
+}
+
+.barra:hover{
+    box-shadow: 0 7px 14px, 0 5px 5px;
+
+}
+
+.barra span{
+    height: 20px;
+    float: left;
+    background:linear-gradient(130deg, orange 0%, orangered 100%)
+}
+
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+
+.css{
+    width: 80%;
+    animation: css 3s;
+}
+
+.javascript{
+    width: 55%;
+    animation: javascript 3s;
+}
+
+.responsabilidad{
+    width: 100%;
+    animation: responsabilidad 3s;
+}
+.trabajo-en-equipo{
+    width: 100%;
+    animation: trabajo-en-equipo 3s;
+}
+.gestion-del-tiempo{
+    width: 90%;
+    animation: gestion-del-tiempo 3s;
+}
+
+@keyframes html{
+    
+        0%{
+            width:0%;
+        }
+
+        100%{
+            width: 90%;
+        }
+    }
+
+    @keyframes css{
+    
+        0%{
+            width:0%;
+        }
+
+        100%{
+            width: 80%;
+        }
+    }
+
+    @keyframes javascript{
+    
+        0%{
+            width:0%;
+        }
+
+        100%{
+            width: 55%;
+        }
+    }
+
+    @keyframes responsabilidad{
+    
+        0%{
+            width:0%;
+        }
+
+        100%{
+            width: 100%;
+        }
+    }
+
+    
+    @keyframes responsabilidad{
+    
+        0%{
+            width:0%;
+        }
+
+        100%{
+            width: 100%;
+        }
+    }
+
+    
+    @keyframes trabajo-en-equipo{
+    
+        0%{
+            width:0%;
+        }
+
+        100%{
+            width: 100%;
+        }
+    }
+
+    
+    @keyframes gestion-del-tiempo{
+    
+        0%{
+            width:0%;
+        }
+
+        100%{
+            width: 90%;
+        }
+    }

@@ -6,15 +6,15 @@ img{
     border-radius: 100%;
     float: left;
     left:200px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow:black 0px 5px 20px;
     
     
 }
 div{
-    background-color: skyblue;
+    background-color: darkcyan;
     text-align: center;
     font-family: 'Fredoka One', cursive;
-    color:black
+    color:white
     
     
 
@@ -36,11 +36,11 @@ h2{
 
 .nombre{
     font-size: 1.5rem;
-    font-weight: bolder;
+    font-weight:normal;
     text-align: left;
     position: relative;
     margin-left: 75px;
-    margin-top: -2.5rem;
+    margin-top: -5rem;
     
 
     
