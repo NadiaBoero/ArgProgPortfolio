@@ -1,9 +1,18 @@
+div{
+    margin-right: 1rem;
+    
+}
 img{
-    margin-top: 0.3rem;
-    padding:0.1rem;
-    width: 2rem;
-    height: 2rem;
+    margin-top: 0.2rem;
+    padding:0.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     
     
+    
+    
+}
+.button{
+    padding:1rem;
     
 }

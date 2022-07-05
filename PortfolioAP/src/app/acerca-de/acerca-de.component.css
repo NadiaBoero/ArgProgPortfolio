@@ -5,7 +5,7 @@ img{
     height: 350px;
     border-radius: 100%;
     float: left;
-    left:200px;
+    left:220px;
     box-shadow:black 0px 5px 20px;
     
     
@@ -24,6 +24,7 @@ div{
 h1{
     font-size: 4rem;
     padding-top: -3rem;
+    padding-bottom: 1rem;
     color: white;
     
    
@@ -39,7 +40,7 @@ h2{
     font-weight:normal;
     text-align: left;
     position: relative;
-    margin-left: 75px;
+    margin-left: 100px;
     margin-top: -5rem;
     
 
@@ -47,10 +48,10 @@ h2{
 }
 .titulo{
     font-size: 0.8rem;
-    font-weight: bolder;
+    font-weight: normal;
     text-align: left;
     position: relative;
-    margin-left: 100px;
+    margin-left: 125px;
     margin-top: -1.5rem;
     
     
