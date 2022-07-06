@@ -14,7 +14,9 @@ div{
     background-color: darkcyan;
     text-align: center;
     font-family: 'Fredoka One', cursive;
-    color:white
+    color:white;
+    
+    
     
     
 
@@ -43,6 +45,7 @@ h2{
     margin-left: 100px;
     margin-top: -5rem;
     
+    
 
     
 }
@@ -66,4 +69,14 @@ h2{
     padding-bottom: 2rem;
     
     
+}
+
+
+@media screen and (max-width:480px){
+    img{
+        margin-top: -117px;
+        width: 7rem;
+        height:7rem;
+
+    }
 }
