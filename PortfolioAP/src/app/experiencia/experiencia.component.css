@@ -6,3 +6,6 @@ div{
     font-family: 'Fredoka One', cursive;
     text-align: center;
 }
+ol{
+    list-style: none;
+}

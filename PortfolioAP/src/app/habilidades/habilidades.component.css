@@ -151,3 +151,48 @@ div{
             width: 90%;
         }
     }
+
+    /*media queries*/
+
+    @media screen and (max-width:480px){
+        div{
+            display:block;
+            width: 100%;
+            align-items: center;
+        }
+        .habilidades{
+            display:block;
+            width: 100%;
+            align-items: center;
+        }
+
+        
+    }
+
+
+    @media screen and (min-width:768px) and (max-width:1024px){
+        div{
+            display: block;
+        }
+        .habilidades{
+            display:block;
+            align-items: center;
+        }
+
+        
+    }
+
+    @media screen and (min-width:1200px){
+        div{
+            display: block;
+        }
+
+        .habilidades{
+            display:block;
+            align-items: center;
+        }
+
+        
+    }
+
+  
