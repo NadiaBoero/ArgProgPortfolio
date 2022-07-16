@@ -10,3 +10,16 @@ div{
 ol{
     list-style: none;
 }
+
+h1 span{
+    font-size: 3rem;
+    background-color: black;
+    line-height: normal;
+    color:white;
+    padding: 5px;
+    
+}
+
+.titulo{
+    transform: rotate(5deg);
+}

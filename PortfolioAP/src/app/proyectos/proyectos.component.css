@@ -8,6 +8,8 @@ p{
     text-align: center;
 }
 
+
+
 div{
 
     text-align: center;
@@ -18,4 +20,16 @@ div{
 
  
 
+}
+
+h1 span{
+    font-size: 3rem;
+    background-color: black;
+    
+    color:white;
+    padding: 5px;
+    
+}
+.titulo{
+    transform: rotate(5deg);
 }

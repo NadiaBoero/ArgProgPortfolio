@@ -7,6 +7,7 @@ img{
     float: left;
     left:220px;
     box-shadow:black 0px 5px 20px;
+    margin-bottom: 0;
     
     
 }
@@ -31,36 +32,54 @@ h1{
     
    
 }
-h2{
-    font-size: 2rem;
-    
+h2 span{
+    font-size: 3rem;
+    background-color: black;
+    line-height: normal;
     color: white;
+    padding: 5px;
+    
 }
 
-.nombre{
+.titulo-2{
+    transform: rotate(5deg);
+}
+
+.nombre span{
     font-size: 1.5rem;
     font-weight:normal;
     text-align: left;
     position: relative;
-    margin-left: 100px;
-    margin-top: -5rem;
+    margin-left: -950px;
+    background-color: black;
+    line-height: normal;
+    color: white;
+    padding: 10px;
     
     
 
     
 }
-.titulo{
+.titulo span{
     font-size: 0.8rem;
     font-weight: normal;
     text-align: left;
     position: relative;
-    margin-left: 125px;
-    margin-top: -1.5rem;
+    margin-left: -950px;
+    background-color: black;
+    line-height: normal;
+    color: white;
+    padding: 10px;
     
-    
-
-
-    
+}
+.titulo{
+    margin-top: -10px;
+    transform: rotate(-2deg);
+    padding:0;
+}
+.nombre{
+    margin:-25px;
+    transform: rotate(3deg);
 }
 
 .info{
