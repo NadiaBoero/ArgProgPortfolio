@@ -14,12 +14,20 @@ div{
 
     text-align: center;
     font-family: 'Fredoka One', cursive;
+    background-color: pink;
     
     
     
 
  
 
+}
+.carousel-caption{
+    background-color: transparent;
+}
+
+.carousel-indicators{
+    background-color: transparent;
 }
 
 h1 span{

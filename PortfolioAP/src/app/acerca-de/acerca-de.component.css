@@ -73,13 +73,13 @@ h2 span{
     
 }
 .titulo{
-    margin-top: -10px;
-    transform: rotate(-2deg);
+    margin-top: 65px;
+    transform: rotate(3deg);
     padding:0;
 }
 .nombre{
-    margin:-25px;
-    transform: rotate(3deg);
+    margin-top:-100px;
+    transform: rotate(-4deg);
 }
 
 .info{
