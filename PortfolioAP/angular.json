@@ -75,6 +75,7 @@
           "configurations": {
             "production": {
               "browserTarget": "PortfolioAP:build:production"
+              
             },
             "development": {
               "browserTarget": "PortfolioAP:build:development"

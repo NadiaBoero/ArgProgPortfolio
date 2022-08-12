@@ -3,11 +3,11 @@
 
 <div class="container">
     <h2>login</h2>
-    <form>
-        <input type="text" class="email" placeholder="email">
-        <br />
-        <input type="text" class="pwd" placeholder="contraseña">
-    </form>
+    
+   <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+    <input type="text" class="nombreUsuario" placeholder="USUARIO" id="nombreUsuario"  [(ngModel)]="nombreUsuario" name="nombreUsuario" required>
+    <br />
+    <input type="password" id="password" class="password" placeholder="CONTRASEÑA" [(ngModel)]="password" name="password" required>
     <a href="#" class="link">
         Olvidaste tu contraseña?
     </a>
@@ -15,9 +15,12 @@
     <button class="register">
         <span>REGISTRATE!</span>
     </button>
-    <button class="signin">
+    <button type="submit" class="signin">
         <span>INGRESÁ</span>
     </button>
+    </form>
+       
+    
     <h3>your registration is complete ! </h3>
     <h3>your sign in is complete !</h3>
     <div class="reg"></div>
