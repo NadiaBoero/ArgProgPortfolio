@@ -1,29 +1,32 @@
 <div>
+    
     <br>
-
-    <h1 class="titulo"><span>MIS ESTUDIOS Y CERTICADOS</span></h1> 
-    <br>
-    <br>
-    <div >
-        <ol>
-            <li>
-                <h2>#ARGENTINAPROGRAMA</h2>
-                <h3>Año 2020</h3> 
-                <h4>Full Stack Developer Jr</h4>
-            </li>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, libero distinctio doloribus suscipit ab ratione facilis inventore? Ut odit alias perferendis quaerat dolore est autem architecto nam animi minus? Alias?</p>
-            <li>
-                <h2>UDEMY</h2>
-                <h3>Año 2021</h3> 
-                <h4>Curso HTML desde 0</h4>
-            </li>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, libero distinctio doloribus suscipit ab ratione facilis inventore? Ut odit alias perferendis quaerat dolore est autem architecto nam animi minus? Alias?</p>
-            <li>
-                <h2>GOOGLE ACTIVATE</h2>
-                <h3>Año 2022</h3> 
-                <h4>Curso Fundamentos de Marketing Digital</h4>
-            </li>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, libero distinctio doloribus suscipit ab ratione facilis inventore? Ut odit alias perferendis quaerat dolore est autem architecto nam animi minus? Alias?</p>
-        </ol>
+        <h1 class="titulo"><span> MIS ESTUDIOS Y CERTIFICADOS </span></h1>
+        <div>
+            <button type="button" class="btn btn-primary" routerLink="/nuevoestudios" *ngIf="isLogged"> Agregar Descripción Estudios</button>
+        </div>
+        <div>
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let Estudios of estudios">
+                        <td>
+                            {{Estudios.nombreEdu}}
+                        </td>
+                        <td>
+                            {{Estudios.descripcionEdu}}
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-primary" routerLink="/editarestudios/{{Estudios.id}}"><i class="bi bi-pen"></i>Editar</button>
+                        </td>
+                        <td *ngIf="isLogged"><button class="btn btn-danger" (click)="borrar(Estudios.id)"><i class="bi bi-trash3"></i>Borrar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+          
+        </div>
+    
+    
+    
+    
+    
     </div>
-</div>

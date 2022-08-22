@@ -16,6 +16,10 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { interceptorProvider } from './servicio/interceptor-servicio';
+import { NuevaExpLaboralComponent } from './experiencia/nueva-exp-laboral/nueva-exp-laboral.component';
+import { EditarExplaboralComponent } from './experiencia/editar-explaboral/editar-explaboral.component';
+import { NuevaEducacionComponent } from './educacion/nueva-educacion/nueva-educacion.component';
+import { EditarEducacionComponent } from './educacion/editar-educacion/editar-educacion.component';
 
 
 @NgModule({
@@ -32,6 +36,10 @@ import { interceptorProvider } from './servicio/interceptor-servicio';
     BannerComponent,
     HomeComponent,
     LoginComponent,
+    NuevaExpLaboralComponent,
+    EditarExplaboralComponent,
+    NuevaEducacionComponent,
+    EditarEducacionComponent,
   ],
   imports: [
     BrowserModule,

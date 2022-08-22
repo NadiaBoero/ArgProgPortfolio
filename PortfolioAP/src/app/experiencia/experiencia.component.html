@@ -4,22 +4,30 @@
 <br>
     <h1 class="titulo"><span> EXPERIENCIA LABORAL </span></h1>
     <div>
-        <ol>
-            <li>
-                <h2>Empresa</h2>
-                <h3>Año 2020</h3> 
-            </li>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, libero distinctio doloribus suscipit ab ratione facilis inventore? Ut odit alias perferendis quaerat dolore est autem architecto nam animi minus? Alias?</p>
-            <li>
-                <h2>Empresa</h2>
-                <h3>Año 2021</h3> 
-            </li>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, libero distinctio doloribus suscipit ab ratione facilis inventore? Ut odit alias perferendis quaerat dolore est autem architecto nam animi minus? Alias?</p>
-            <li>
-                <h2>Empresa</h2>
-                <h3>Año 2022</h3> 
-            </li>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, libero distinctio doloribus suscipit ab ratione facilis inventore? Ut odit alias perferendis quaerat dolore est autem architecto nam animi minus? Alias?</p>
-        </ol>
+        <button type="button" class="btn btn-primary" routerLink="/nuevaexplaboral" *ngIf="isLogged"> Agregar Nueva Experiencia Laboral</button>
     </div>
+    <div>
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let ExpLab of expLab">
+                    <td>
+                        {{ExpLab.nombreExp}}
+                    </td>
+                    <td>
+                        {{ExpLab.descripcionExp}}
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-primary" routerLink="/editarexplaboral/{{ExpLab.id}}"><i class="bi bi-pen"></i>Editar</button>
+                    </td>
+                    <td *ngIf="isLogged"><button class="btn btn-danger" (click)="borrar(ExpLab.id)"><i class="bi bi-trash3"></i>Borrar</button></td>
+                </tr>
+            </tbody>
+        </table>
+      
+    </div>
+
+
+
+
+
 </div>
