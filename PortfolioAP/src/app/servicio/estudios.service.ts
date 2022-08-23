@@ -26,7 +26,7 @@ export class EstudiosService {
   }
 
   public update(id:number, estudios:Estudios):Observable<any>{
-    return this.httpClient.put<Estudios>(this.URL + `update/${id}`, estudios);
+    return this.httpClient.put<any>(this.URL + `update/${id}`, estudios);
 
   }
 

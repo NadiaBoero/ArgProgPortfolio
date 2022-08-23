@@ -1,5 +1,5 @@
 export class Estudios {
-    id:number;
+    id?:number;
     nombreEdu:string;
     descripcionEdu:string;
 

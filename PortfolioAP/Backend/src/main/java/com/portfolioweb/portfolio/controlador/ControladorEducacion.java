@@ -91,7 +91,7 @@ public class ControladorEducacion {
         }
         Educacion educacion = servicioEducacion.getOne(id).get();
         educacion.setNombreEdu(dtoeducacion.getNombreEdu());
-        educacion.setDescripcionEdu((dtoeducacion.getDescripcionEdu()));
+        educacion.setDescripcionEdu(dtoeducacion.getDescripcionEdu());
         
         servicioEducacion.save(educacion);
         return new ResponseEntity(new Mensaje("Educacion Actualizada Correctamente"),HttpStatus.OK);
