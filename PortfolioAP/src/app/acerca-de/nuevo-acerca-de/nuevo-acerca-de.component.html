@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="CargarAcercaDe()" novalidate #f = "ngForm">
+            <div class="form-group">
+                <label for="nombreAcerca">NOMBRE</label>
+                <input type="text" class="form-control" id="nombreAcerca" name="nombreAcerca" [(ngModel)]="nombreAcerca" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcionAcerca"> INFORMACION ACERCA DE TI</label>
+                <input type="text" class="form-control" id="descripcionAcerca" name="descripcionAcerca" [(ngModel)]="descripcionAcerca" required>
+            
+            </div>
+            <button class="btn btn-dark">Agregar Información Acerca De </button>
+        </form>      
+        </div> 
+    </div>
+</div>

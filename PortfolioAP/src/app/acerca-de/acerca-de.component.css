@@ -32,16 +32,9 @@ h1{
     
    
 }
-h2 span{
-    font-size: 3rem;
-    background-color: black;
-    line-height: normal;
-    color: white;
-    padding: 5px;
-    
-}
 
-.titulo-2{
+
+h1 .tituloacerca span{
     transform: rotate(5deg);
 }
 
@@ -88,6 +81,15 @@ h2 span{
     padding-bottom: 2rem;
     
     
+}
+
+.tituloacerca{
+    font-size: 3rem;
+    background-color: black;
+    line-height: normal;
+    color: white;
+    padding: 5px;
+
 }
 
 

@@ -20,6 +20,7 @@ import { NuevaExpLaboralComponent } from './experiencia/nueva-exp-laboral/nueva-
 import { EditarExplaboralComponent } from './experiencia/editar-explaboral/editar-explaboral.component';
 import { NuevaEducacionComponent } from './educacion/nueva-educacion/nueva-educacion.component';
 import { EditarEducacionComponent } from './educacion/editar-educacion/editar-educacion.component';
+import { NuevoAcercaDeComponent } from './acerca-de/nuevo-acerca-de/nuevo-acerca-de.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { EditarEducacionComponent } from './educacion/editar-educacion/editar-ed
     EditarExplaboralComponent,
     NuevaEducacionComponent,
     EditarEducacionComponent,
+    NuevoAcercaDeComponent,
   ],
   imports: [
     BrowserModule,

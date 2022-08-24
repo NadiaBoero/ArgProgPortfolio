@@ -5,12 +5,33 @@
             MI PORTFOLIO</h1>
         <h4 class="nombre"><span>{{persona.nombre}} {{persona.apellido}}</span></h4>
         <h4 class="titulo"><span>Full Stack Developer Jr</span></h4> 
-    </div>
-    <div>
         <br>
-        <h2 class="titulo-2"><span> ACERCA DE MI</span></h2>
-        <br>
-        <p class="info">Mi nombre es Nadia, tengo 25 años, soy desarroladora Full Stack y estoy aca para ayudarte, en esta página encontraras toda mi información y los trabajos que he ido realizando en mi reciente carrera de programadora, vamos, te invito a conocerme!</p>
+        <h1 ><span class="tituloacerca"> ACERCA DE MI </span></h1>
+        <div>
+            <button type="button" class="btn btn-primary" routerLink="/nuevoacercade" *ngIf="isLogged"> Agregar Descripción Acerca De Ti</button>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div>
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let acercade of acercade">
+                        <td>
+                            {{acercade.nombreAcerca}}
+                        </td>
+                        <td>
+                            {{acercade.descripcionAcerca}}
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-primary" routerLink="/editarestudios/{{acercade.id}}"><i class="bi bi-pen"></i>Editar</button>
+                        </td>
+                        <td *ngIf="isLogged"><button class="btn btn-danger" (click)="borrar(acercade.id)"><i class="bi bi-trash3"></i>Borrar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+          
+        </div>    
     </div>
 </div>
 
