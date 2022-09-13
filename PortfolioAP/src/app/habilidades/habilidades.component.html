@@ -1,31 +1,18 @@
 <div>
     <br>
     <h1 class="titulo"><span>HARD & SOFT SKILLS</span></h1> 
-    <div class="habilidades">
+    <div> 
+        <button type="button" class="btn btn-primary" routerLink="/nuevahabilidades" *ngIf="isLogged"> Agregar Habilidades</button>
+    </div>
+    <div class="habilidades" *ngFor="let habilidades of habilidades">
     
     <li>
-        <h3>HTML</h3>
+        <h3>{{habilidades.nombre}}</h3>
         <span class="barra"> <span class="html"></span></span>
+        <td *ngIf="isLogged">
+            <button class="btn btn-primary" routerLink="/edithabilidades/{{habilidades.id}}"><i class="bi bi-pen"></i>Editar</button>
+        </td>
+        <td *ngIf="isLogged"><button class="btn btn-danger" (click)="borrar(habilidades.id)"><i class="bi bi-trash3"></i>Borrar</button></td>
     </li>
-    <li>
-        <h3>CSS</h3>
-        <span class="barra"> <span class="css"></span></span>
-    </li>
-    <li>
-        <h3>JAVASCRIPT</h3>
-        <span class="barra"> <span class="javascript"></span></span>
-    </li>
-    <li>
-        <h3>Responsabilidad</h3>
-        <span class="barra"> <span class="responsabilidad"></span></span>
-    </li>
-    <li>
-        <h3>Trabajo en Equipo</h3>
-        <span class="barra"> <span class="trabajo-en-equipo"></span></span>
-    </li>
-    <li>
-        <h3>Gestion del Tiempo</h3>
-        <span class="barra"> <span class="gestion-del-tiempo"></span></span>
-    </li>
-    </div>
+    
 </div>

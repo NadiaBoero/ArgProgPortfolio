@@ -21,6 +21,8 @@ import { EditarExplaboralComponent } from './experiencia/editar-explaboral/edita
 import { NuevaEducacionComponent } from './educacion/nueva-educacion/nueva-educacion.component';
 import { EditarEducacionComponent } from './educacion/editar-educacion/editar-educacion.component';
 import { NuevoAcercaDeComponent } from './acerca-de/nuevo-acerca-de/nuevo-acerca-de.component';
+import { EditarHabilidadesComponent } from './habilidades/editar-habilidades/editar-habilidades.component';
+import { NuevaHabilidadesComponent } from './habilidades/nueva-habilidades/nueva-habilidades.component';
 
 
 @NgModule({
@@ -42,6 +44,8 @@ import { NuevoAcercaDeComponent } from './acerca-de/nuevo-acerca-de/nuevo-acerca
     NuevaEducacionComponent,
     EditarEducacionComponent,
     NuevoAcercaDeComponent,
+    EditarHabilidadesComponent,
+    NuevaHabilidadesComponent,
   ],
   imports: [
     BrowserModule,
