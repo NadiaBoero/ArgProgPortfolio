@@ -1,9 +1,12 @@
+<img src="../../assets/acercademi.svg" alt="">
+
+
 <div class="container">
     <div class="row">
         <div>
             <form (ngSubmit)="CargarAcercaDe()" novalidate #f = "ngForm">
             <div class="form-group">
-                <label for="nombreAcerca">NOMBRE</label>
+                <label for="nombreAcerca">NOMBRE Y APELLIDO</label>
                 <input type="text" class="form-control" id="nombreAcerca" name="nombreAcerca" [(ngModel)]="nombreAcerca" required>
             </div>
             <div class="form-group">
@@ -11,7 +14,8 @@
                 <input type="text" class="form-control" id="descripcionAcerca" name="descripcionAcerca" [(ngModel)]="descripcionAcerca" required>
             
             </div>
-            <button class="btn btn-dark">Agregar Información Acerca De </button>
+            <br>
+            <button class="btn btn-dark">Agregar Información Acerca De Ti </button>
         </form>      
         </div> 
     </div>

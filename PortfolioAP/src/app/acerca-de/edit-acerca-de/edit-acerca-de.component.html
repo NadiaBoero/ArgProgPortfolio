@@ -1,0 +1,21 @@
+<img src="../../assets/edit.svg" alt="">
+
+<div class="container" *ngIf="acercade">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="EditarAcercaDe()" novalidate #f = "ngForm">
+            <div class="form-group">
+                <label for="nombreAcerca">NOMBRE Y APELLIDO</label>
+                <input type="text" class="form-control" id="nombreAcerca" name="nombreAcerca" [(ngModel)]="acercade.nombreAcerca" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcionAcerca">INFORMACION ACERCA DE TI</label>
+                <input type="text" class="form-control" id="descripcionAcerca" name="descripcionAcerca" [(ngModel)]="acercade.descripcionAcerca" required>
+            
+            </div>
+            <br>
+            <button class="btn btn-dark">Actualizar Información Acerca De Ti</button>
+        </form>      
+        </div> 
+    </div>
+</div>

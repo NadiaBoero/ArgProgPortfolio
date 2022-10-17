@@ -23,3 +23,9 @@ h1 span{
 .titulo{
     transform: rotate(5deg);
 }
+
+button{
+    margin: -30px;
+    margin-bottom: 1px;
+    position: static;
+}

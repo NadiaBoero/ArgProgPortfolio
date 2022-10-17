@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 public class Persona {
      @Id
      @GeneratedValue(strategy = GenerationType.IDENTITY)
-     private Long id;
+     private int id;
      @NotNull
      @Size (min = 1, max = 40, message = "error longitud caracteres" )
      private  String nombre;
@@ -23,13 +23,20 @@ public class Persona {
      
      @NotNull
      @Size (min = 1, max = 40, message = "error longitud caracteres" )
+     private String descripcion;
+     
+     @NotNull
+     @Size (min = 1, max = 40, message = "error longitud caracteres" )
      private String img;
 
-    public Long getId() {
+    public Persona() {
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -49,6 +56,14 @@ public class Persona {
         this.apellido = apellido;
     }
 
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
     public String getImg() {
         return img;
     }
@@ -56,6 +71,10 @@ public class Persona {
     public void setImg(String img) {
         this.img = img;
     }
+     
+     
+
+    
      
      
 }

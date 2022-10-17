@@ -23,6 +23,8 @@ import { EditarEducacionComponent } from './educacion/editar-educacion/editar-ed
 import { NuevoAcercaDeComponent } from './acerca-de/nuevo-acerca-de/nuevo-acerca-de.component';
 import { EditarHabilidadesComponent } from './habilidades/editar-habilidades/editar-habilidades.component';
 import { NuevaHabilidadesComponent } from './habilidades/nueva-habilidades/nueva-habilidades.component';
+import { EditAcercaDeComponent } from './acerca-de/edit-acerca-de/edit-acerca-de.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -46,6 +48,8 @@ import { NuevaHabilidadesComponent } from './habilidades/nueva-habilidades/nueva
     NuevoAcercaDeComponent,
     EditarHabilidadesComponent,
     NuevaHabilidadesComponent,
+    EditAcercaDeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

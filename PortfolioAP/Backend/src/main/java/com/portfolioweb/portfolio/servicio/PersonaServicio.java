@@ -2,39 +2,50 @@
 package com.portfolioweb.portfolio.servicio;
 
 import com.portfolioweb.portfolio.entidad.Persona;
-import com.portfolioweb.portfolio.interfaz.InterfazPersonaServicio;
 import com.portfolioweb.portfolio.repositorio.InterfazPersonaRepositorio;
 import java.util.List;
+import java.util.Optional;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PersonaServicio implements InterfazPersonaServicio {
+@Transactional
+public class PersonaServicio{
     @Autowired InterfazPersonaRepositorio interfazPersonaRepositorio;
-
-    @Override
-    public List<Persona> GetPersona() {
-        List<Persona> persona = interfazPersonaRepositorio.findAll();
-        return persona;
+    
+    public List <Persona> list(){
+        return interfazPersonaRepositorio.findAll();
+        
     }
-
-    @Override
-    public void savePersona(Persona persona) {
+    
+    public Optional <Persona> getOne(int id){
+        return interfazPersonaRepositorio.findById(id);
+    }
+    
+    public Optional <Persona> getByNombre(String nombre){
+        return interfazPersonaRepositorio.findByNombre(nombre);
+    }
+    
+    public void save(Persona persona){
         interfazPersonaRepositorio.save(persona);
+        
     }
-
-    @Override
-    public void deletePersona(Long id) {
+    
+       public void delete(int id){
         interfazPersonaRepositorio.deleteById(id);
         
     }
-
+       
+       public boolean existsById(int id){
+           return interfazPersonaRepositorio.existsById(id);
+       }
     
-    @Override
-    public Persona findPersona(Long id) {
-      Persona persona = interfazPersonaRepositorio.findById(id).orElse(null);
-      return persona;
+    public boolean existsByNombre(String nombre){
+           return interfazPersonaRepositorio.existsByNombre(nombre);
+       }
+   
         
-   }
+   
     
 }

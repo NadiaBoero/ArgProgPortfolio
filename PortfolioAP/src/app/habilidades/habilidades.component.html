@@ -6,9 +6,11 @@
     </div>
     <div class="habilidades" *ngFor="let habilidades of habilidades">
     
-    <li>
+    <li  class="skill-box">
         <h3>{{habilidades.nombre}}</h3>
-        <span class="barra"> <span class="html"></span></span>
+        <span  class="barra"><div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Success striped example" style="width:{{habilidades.porcentaje}}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></span>
+        
+        <br>
         <td *ngIf="isLogged">
             <button class="btn btn-primary" routerLink="/edithabilidades/{{habilidades.id}}"><i class="bi bi-pen"></i>Editar</button>
         </td>

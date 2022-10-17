@@ -21,17 +21,13 @@ h1 span{
 }
 .habilidades{
     width: 500px;
-    margin:60px auto;
+    margin:50px auto;
     background-color: orange;
     padding:20px;
     box-shadow: 0 14px 28px, 0 10px 10px;
+    
 }
 
-.habilidades li{
-    margin:20px, 0;
-    padding: 10px;
-
-}
 
 .barra{
     background-color: white;
@@ -55,69 +51,36 @@ h1 span{
     background:linear-gradient(130deg, orange 0%, orangered 100%)
 }
 
-.html{
-    width:"";
-    animation: html 3s;
+div .porcentaje{
+    width: 50%;
+    
+    
 }
 
+button{
+    margin: 10px;
+}
 
-    @keyframes javascript{
-    
-        0%{
-            width:0%;
-        }
+/*@keyframes porcentaje{
 
-        100%{
-            width: 55%;
-        }
+    0%{
+        width:0%;
     }
 
-    @keyframes responsabilidad{
-    
-        0%{
-            width:0%;
-        }
-
-        100%{
-            width: 100%;
-        }
+    100%{
+        width:100%;
     }
+}*/
+   
 
     
-    @keyframes responsabilidad{
-    
-        0%{
-            width:0%;
-        }
-
-        100%{
-            width: 100%;
-        }
-    }
+   
 
     
-    @keyframes trabajo-en-equipo{
-    
-        0%{
-            width:0%;
-        }
-
-        100%{
-            width: 100%;
-        }
-    }
+  
 
     
-    @keyframes gestion-del-tiempo{
     
-        0%{
-            width:0%;
-        }
-
-        100%{
-            width: 90%;
-        }
-    }
 
     /*media queries*/
 
