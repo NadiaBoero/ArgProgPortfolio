@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { AcercaDeComponent } from './acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { EducacionComponent } from './educacion/educacion.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
@@ -20,18 +19,16 @@ import { NuevaExpLaboralComponent } from './experiencia/nueva-exp-laboral/nueva-
 import { EditarExplaboralComponent } from './experiencia/editar-explaboral/editar-explaboral.component';
 import { NuevaEducacionComponent } from './educacion/nueva-educacion/nueva-educacion.component';
 import { EditarEducacionComponent } from './educacion/editar-educacion/editar-educacion.component';
-import { NuevoAcercaDeComponent } from './acerca-de/nuevo-acerca-de/nuevo-acerca-de.component';
 import { EditarHabilidadesComponent } from './habilidades/editar-habilidades/editar-habilidades.component';
 import { NuevaHabilidadesComponent } from './habilidades/nueva-habilidades/nueva-habilidades.component';
-import { EditAcercaDeComponent } from './acerca-de/edit-acerca-de/edit-acerca-de.component';
 import { FooterComponent } from './footer/footer.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
     HabilidadesComponent,
@@ -45,10 +42,8 @@ import { FooterComponent } from './footer/footer.component';
     EditarExplaboralComponent,
     NuevaEducacionComponent,
     EditarEducacionComponent,
-    NuevoAcercaDeComponent,
     EditarHabilidadesComponent,
     NuevaHabilidadesComponent,
-    EditAcercaDeComponent,
     FooterComponent,
   ],
   imports: [
