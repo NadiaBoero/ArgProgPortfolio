@@ -1,0 +1,95 @@
+div{
+    padding: 2rem;
+    margin-top: -1rem;
+    background-color: #FFD747;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    
+    
+
+}
+
+
+
+h1 span{
+    font-size: 3rem;
+    background-color: black;
+    line-height: normal;
+    color:white;
+    padding: 5px;
+    
+}
+
+.titulo{
+    margin-top: 2rem;
+    transform: rotate(5deg);
+}
+
+.bienvenida{
+    font-size: 4rem;
+    
+    line-height: normal;
+    color:black;
+    padding: 5px;
+    margin-top: -55px;
+}
+
+img{
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: 4px 4px 8px 1px black;
+
+    
+    
+}
+
+.nombre {
+    font-size: 1rem;
+    background-color: black;
+    line-height: normal;
+    color:white;
+    padding: 3px;
+    margin-left: -400px;
+    margin-bottom: 100px;
+    
+    
+
+}
+
+.titulo-dev{
+    font-size: 1rem;
+    background-color: black;
+    line-height: normal;
+    color:white;
+    padding: 3px;
+    margin-left: -400px;
+    
+}
+
+div .info-personal{
+    font-size: 24px;
+    line-height: normal;
+    color:white;
+    margin-right: 200px;
+    margin-left: -200px;
+    text-align: center;
+    
+    
+    
+}
+
+
+@media (min-width:576px){
+    #foto-perfil{
+        position: absolute;
+        width: 20%;
+        left:1%;
+        margin-top: -16rem;
+    }
+    
+
+}
+

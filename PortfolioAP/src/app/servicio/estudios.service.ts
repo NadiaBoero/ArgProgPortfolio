@@ -7,7 +7,7 @@ import { Estudios } from '../Model/estudios';
   providedIn: 'root'
 })
 export class EstudiosService {
-  URL='http://localhost:8080/estudios/';
+  URL='https://backendportfolionadia.herokuapp.com/estudios/';
 
   constructor(private httpClient:HttpClient) { }
 

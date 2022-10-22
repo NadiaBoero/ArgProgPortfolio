@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../Model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'http://localhost:8080/authentication/';
+  authURL = 'https://backendportfolionadia.herokuapp.com/authentication/';
 
   constructor(private httpClient:HttpClient){}
 

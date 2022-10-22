@@ -22,6 +22,7 @@ import { EditarEducacionComponent } from './educacion/editar-educacion/editar-ed
 import { EditarHabilidadesComponent } from './habilidades/editar-habilidades/editar-habilidades.component';
 import { NuevaHabilidadesComponent } from './habilidades/nueva-habilidades/nueva-habilidades.component';
 import { FooterComponent } from './footer/footer.component';
+import { AcercaDeComponent } from './acerca-de/acerca-de.component';
 
 
 
@@ -45,6 +46,7 @@ import { FooterComponent } from './footer/footer.component';
     EditarHabilidadesComponent,
     NuevaHabilidadesComponent,
     FooterComponent,
+    AcercaDeComponent,
   ],
   imports: [
     BrowserModule,

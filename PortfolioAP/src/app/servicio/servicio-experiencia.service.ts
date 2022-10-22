@@ -7,7 +7,7 @@ import { ExpLaboral } from '../Model/exp-laboral';
   providedIn: 'root'
 })
 export class ServicioExperienciaService {
-  expURL='http://localhost:8080/explaboral/'
+  expURL='https://backendportfolionadia.herokuapp.com/explaboral/'
 
   constructor(private httpClient: HttpClient) { }
 

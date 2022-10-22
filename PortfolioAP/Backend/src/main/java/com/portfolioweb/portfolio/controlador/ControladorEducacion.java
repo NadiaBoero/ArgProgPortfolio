@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/estudios")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontend-portfolio-nadia.web.app")
 public class ControladorEducacion {
     @Autowired
     ServicioEducacion servicioEducacion;
