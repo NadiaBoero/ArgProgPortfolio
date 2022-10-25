@@ -32,6 +32,16 @@ public class Persona {
     public Persona() {
     }
 
+    public Persona(String nombre, String apellido, String descripcion, String img) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.descripcion = descripcion;
+        this.img = img;
+    }
+    
+    
+    
+
     public int getId() {
         return id;
     }

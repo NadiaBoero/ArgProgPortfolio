@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("explaboral")
-@CrossOrigin(origins = "https://frontend-portfolio-nadia.web.app/")
+@CrossOrigin(origins = {"https://frontend-portfolio-nadia.web.app", "http://localhost:4200"})
 public class ControladorExp {
 
     @Autowired

@@ -17,6 +17,16 @@ public class DtoPersona {
     public DtoPersona() {
     }
 
+    public DtoPersona(String nombre, String apellido, String descripcion, String img) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.descripcion = descripcion;
+        this.img = img;
+    }
+    
+    
+    
+
     public String getNombre() {
         return nombre;
     }

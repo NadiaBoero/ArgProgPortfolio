@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Estudios } from '../Model/estudios';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EstudiosService {
-  URL='https://backendportfolionadia.herokuapp.com/estudios/';
+  URL = environment.URL + 'estudios/';
 
   constructor(private httpClient:HttpClient) { }
 

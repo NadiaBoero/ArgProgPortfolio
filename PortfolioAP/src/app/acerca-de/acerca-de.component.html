@@ -5,21 +5,23 @@
 <br>
 <br>
    <h1 class="titulo"><span> ACERCA DE MI </span></h1>
-
+   <div>
+    <button type="button" class="btn btn-primary" routerLink="/editacercade/1" *ngIf="isLogged"> Editar Persona</button>
+</div>
 
     
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="..//../assets/fotoperfil.png" class="img-fluid" id="foto-perfil">
+        <img src={{persona.img}} class="img-fluid" id="foto-perfil">
     </div>
 
    
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p><span class="nombre">Nadia Azul Boero </span> </p>
+        <p><span class="nombre">{{persona.nombre}} {{persona.apellido}}</span> </p>
         <p><span class="titulo-dev">Full Stack Developer Jr</span></p>
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-8">
         <br>
         <br>
-        <div class="info-personal">Hola, bienvenido, soy Desarrolladora Web Full Stack Jr. y una amante de la tecnologia desde muy pequeña, hoy puedo cumplir mi sueño de crear paginas web, te invito a conocerme en detalle! </div>
+        <div class="info-personal">{{persona.descripcion}} </div>
     </div>
 </div>

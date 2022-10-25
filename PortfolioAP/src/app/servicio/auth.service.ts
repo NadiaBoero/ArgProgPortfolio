@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { JwtDto } from '../Model/jwt-dto';
 import { LoginUsuario } from '../Model/login-usuario';
 import { NuevoUsuario } from '../Model/nuevo-usuario';
@@ -9,7 +10,7 @@ import { NuevoUsuario } from '../Model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://backendportfolionadia.herokuapp.com/authentication/';
+  authURL = environment.URL + 'authentication/';
 
   constructor(private httpClient:HttpClient){}
 
