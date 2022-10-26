@@ -22,11 +22,11 @@ public class Persona {
      private String apellido;
      
      @NotNull
-     @Size (min = 1, max = 40, message = "error longitud caracteres" )
+     @Size (min = 1, max = 255, message = "error longitud caracteres" )
      private String descripcion;
      
      @NotNull
-     @Size (min = 1, max = 40, message = "error longitud caracteres" )
+     @Size (min = 1, max = 255, message = "error longitud caracteres" )
      private String img;
 
     public Persona() {

@@ -23,6 +23,10 @@ import { EditarHabilidadesComponent } from './habilidades/editar-habilidades/edi
 import { NuevaHabilidadesComponent } from './habilidades/nueva-habilidades/nueva-habilidades.component';
 import { FooterComponent } from './footer/footer.component';
 import { AcercaDeComponent } from './acerca-de/acerca-de.component';
+import { EditarAcercaDeComponent } from './acerca-de/editar-acerca-de/editar-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 
@@ -47,12 +51,15 @@ import { AcercaDeComponent } from './acerca-de/acerca-de.component';
     NuevaHabilidadesComponent,
     FooterComponent,
     AcercaDeComponent,
+    EditarAcercaDeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     interceptorProvider
