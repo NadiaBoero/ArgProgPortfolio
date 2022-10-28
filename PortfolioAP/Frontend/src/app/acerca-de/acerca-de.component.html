@@ -4,24 +4,26 @@
 <br>
 <br>
 <br>
+<br>
    <h1 class="titulo"><span> ACERCA DE MI </span></h1>
    <div>
+    <br>
     <button type="button" class="btn btn-primary" routerLink="/editacercade/1" *ngIf="isLogged"> Editar Persona</button>
 </div>
 
-    
+    <br>
+    <br>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <img src={{persona.img}} class="img-fluid" id="foto-perfil">
     </div>
 
    
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <div class="container">
         <p><span class="nombre">{{persona.nombre}} {{persona.apellido}}</span> </p>
         <p><span class="titulo-dev">Full Stack Developer Jr</span></p>
     </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-8">
-        <br>
-        <br>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    
         <div class="info-personal">{{persona.descripcion}} </div>
     </div>
 </div>

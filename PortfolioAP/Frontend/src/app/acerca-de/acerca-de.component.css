@@ -12,7 +12,7 @@ div{
 
 
 
-h1 span{
+h1 span {
     font-size: 3rem;
     background-color: black;
     line-height: normal;
@@ -26,34 +26,30 @@ h1 span{
     transform: rotate(5deg);
 }
 
-.bienvenida{
-    font-size: 4rem;
-    
-    line-height: normal;
-    color:black;
-    padding: 5px;
-    margin-top: -55px;
-}
 
-img{
-    width: 400px;
+
+#foto-perfil{
+    width: 450px;
     height: auto;
     border-radius: 50%;
     background-size: cover;
     box-shadow: 4px 4px 8px 1px black;
+    margin-top: 10px;
+    
+    
 
     
     
 }
 
 .nombre {
-    font-size: 1rem;
+    font-size: 2rem;
     background-color: black;
     line-height: normal;
     color:white;
     padding: 3px;
-    margin-left: -400px;
-    margin-bottom: 100px;
+    margin-left: -1050px;
+    
     
     
 
@@ -65,7 +61,7 @@ img{
     line-height: normal;
     color:white;
     padding: 3px;
-    margin-left: -400px;
+    margin-left: -1050px;
     
 }
 
@@ -73,13 +69,15 @@ div .info-personal{
     font-size: 24px;
     line-height: normal;
     color:white;
-    margin-right: 200px;
-    margin-left: -200px;
-    text-align: center;
+    margin-right: -400px;
+    padding-top: -500px;
+    
     
     
     
 }
+
+
 
 
 @media (min-width:576px){
@@ -87,9 +85,29 @@ div .info-personal{
         position: absolute;
         width: 20%;
         left:1%;
-        margin-top: -16rem;
+        height: auto;
+        border-radius: 50%;
+        background-size: cover;
+        box-shadow: 4px 4px 8px 1px black;
+        margin-top: -400px;
+        
+        
     }
+
+    
     
 
 }
+
+
+@media (max-width:1200px){
+   
+   
+   
+    
+
+}
+
+
+
 

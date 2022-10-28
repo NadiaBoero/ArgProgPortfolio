@@ -27,6 +27,8 @@ import { EditarAcercaDeComponent } from './acerca-de/editar-acerca-de/editar-ace
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { EditarProyectosComponent } from './proyectos/editar-proyectos/editar-proyectos.component';
+import { NuevoProyectoComponent } from './proyectos/nuevo-proyecto/nuevo-proyecto.component';
 
 
 
@@ -52,6 +54,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     FooterComponent,
     AcercaDeComponent,
     EditarAcercaDeComponent,
+    EditarProyectosComponent,
+    NuevoProyectoComponent,
   ],
   imports: [
     BrowserModule,
