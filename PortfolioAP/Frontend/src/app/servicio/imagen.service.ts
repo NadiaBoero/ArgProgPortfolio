@@ -24,10 +24,10 @@ export class ImagenService {
   public subirImagenProyecto($event:any, nombre:string){
     const file = $event.target.files[0]
     console.log(file);
-    const imgRef=ref(this.storage, `imagenes/` + nombre)
+    const imgRef=ref(this.storage, `imagenes/proyectos` + nombre)
     uploadBytes(imgRef, file)
     .then(Response=>{
-      this.getImagenes()
+      this.getImagenesProyectos()
     })
     .catch(error => console.log(error))
   }
@@ -43,4 +43,27 @@ export class ImagenService {
     })
     .catch(error => console.log(error))
   }
+
+  getImagenesProyectos(){
+    const ImagenRef = ref(this.storage, 'imagenes/proyectos')
+    list(ImagenRef)
+    .then(async Response=>{
+      for (let item of Response.items){
+        this.url = await getDownloadURL(item);
+        console.log("La URL es:  " + this.url)
+      }
+    })
+    .catch(error => console.log(error))
+  }
+
+
+
+
+
+
+
+
 }
+
+
+

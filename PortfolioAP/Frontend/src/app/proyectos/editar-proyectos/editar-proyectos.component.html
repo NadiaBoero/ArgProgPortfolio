@@ -5,7 +5,7 @@
         <div>
             <form (ngSubmit)="EditarProyectos()" novalidate #f = "ngForm">
             <div class="form-group">
-                <label for="nombreEdu">NOMBRE PROYECTO</label>
+                <label for="nombreEdu">NOMBRE Y AÑO PROYECTO</label>
                 <input type="text" class="form-control" id="nombreProyecto" name="nombreProyecto" [(ngModel)]="proyectos.nombreProyecto" required>
             </div>
             <div class="form-group">
@@ -14,7 +14,7 @@
             </div>
             <div class="form-group">
                 <label for="urlProyecto">URL PROYECTO</label>
-                <input type="url" class="form-control" id="urlProyecto" name="urlProyecto" [(ngModel)]="proyectos.descripcionProyecto" required>
+                <input type="url" class="form-control" id="urlProyecto" name="urlProyecto" [(ngModel)]="proyectos.urlProyecto" required>
             </div>
             <div class="form-group">
                 <label for="imgProyecto">SUBIR FOTO DE PROYECTO</label>
