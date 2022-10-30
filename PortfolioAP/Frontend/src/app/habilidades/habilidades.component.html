@@ -1,8 +1,10 @@
 <div>
     <br>
+    <br>
     <h1 class="titulo"><span>HARD & SOFT SKILLS</span></h1> 
+    <br>
     <div> 
-        <button type="button" class="btn btn-primary" routerLink="/nuevahabilidades" *ngIf="isLogged"> Agregar Habilidades</button>
+        <button id="button-1" class="btn btn-primary" routerLink="/nuevahabilidades" *ngIf="isLogged"> Agregar Habilidades</button>
     </div>
     <div class="habilidades" *ngFor="let habilidades of habilidades">
     
@@ -12,9 +14,9 @@
         
         <br>
         <td *ngIf="isLogged">
-            <button class="btn btn-primary" routerLink="/edithabilidades/{{habilidades.id}}"><i class="bi bi-pen"></i>Editar</button>
+            <button class="btn btn-primary" routerLink="/edithabilidades/{{habilidades.id}}"><i class="bi bi-pen"></i></button>
         </td>
-        <td *ngIf="isLogged"><button class="btn btn-danger" (click)="borrar(habilidades.id)"><i class="bi bi-trash3"></i>Borrar</button></td>
+        <td *ngIf="isLogged"><button class="btn btn-danger" (click)="borrar(habilidades.id)"><i class="bi bi-trash3"></i></button></td>
     </li>
     
 </div>

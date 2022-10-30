@@ -25,7 +25,32 @@ h1 span{
 }
 
 button{
-    margin: -30px;
+    margin: -16px;
     margin-bottom: 1px;
     position: static;
+}
+
+@media screen and (max-width:500px){
+    div{
+        margin-left: -6%;}
+
+  
+    h1 span{
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+
+  button{
+    
+        margin: 1px;
+        margin-bottom: 1px;
+        position: static;
+        padding: 5px;
+  }
+
+  #button-1{
+    margin-left: 80px;
+  }
+
+
 }

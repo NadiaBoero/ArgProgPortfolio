@@ -15,8 +15,8 @@
 img{
     height: 800px;
     width: 800px;
-    position: inherit;
-    margin-top: -50px;
+    position: absolute;
+    margin-top: -150px;
     
 }
 
@@ -24,10 +24,44 @@ label{
     text-align: center;
     font-family: 'Fredoka One', cursive;
     color: #F9A826;
+    -webkit-text-stroke: 0.5px black;
     
 }
 button{
     text-align: center;
     font-family: 'Fredoka One', cursive;
+    display: inline-block;
+    margin-top: 5%;
+    line-height: 20px;
+    padding: 5px;
+    
+    
 
+}
+
+
+@media screen and (max-width:500px){
+ 
+    .container{
+        width: 50%;
+        height: 50%;
+        margin:0 auto;
+        z-index: 6;
+        margin-top: -50px;
+        
+    }
+
+  img{
+    width:150%;
+    margin-top: -150px;
+    position: absolute;
+    margin-left: -100px;
+  }
+
+  button{
+    margin-top: 5%;
+    line-height: 80%;
+    
+
+  }
 }

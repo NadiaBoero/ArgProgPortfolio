@@ -21,6 +21,17 @@ export class ImagenService {
     .catch(error => console.log(error))
   }
 
+  public subirImagenProyecto($event:any, nombre:string){
+    const file = $event.target.files[0]
+    console.log(file);
+    const imgRef=ref(this.storage, `imagenes/` + nombre)
+    uploadBytes(imgRef, file)
+    .then(Response=>{
+      this.getImagenes()
+    })
+    .catch(error => console.log(error))
+  }
+
   getImagenes(){
     const ImagenRef = ref(this.storage, 'imagenes')
     list(ImagenRef)

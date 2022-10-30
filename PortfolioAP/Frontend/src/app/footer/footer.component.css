@@ -1,10 +1,22 @@
 div{
-    background-color: azure;
+    background-color: black;
 }
 
 footer{
-    color: black;
+    color: white;
     font-family:sans-serif;
     font-weight: bold;
     text-align: center;
+}
+
+@media screen and (max-width:500px){
+
+    div{
+        margin-left: -8%;
+        font-size: 12px;
+    }
+   
+  
+
+
 }
