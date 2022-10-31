@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '158894282980',
   },
   production: true,
-  URL: 'https://backendportfolionadia.herokuapp.com/authentication'
+  URL: 'https://backendportfolionadia.herokuapp.com/'
 };
